@@ -25,6 +25,8 @@ namespace SimpleMicroservice
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            //Dependency Injection for simple wheater Forecast
+            services.AddTransient<IWeatherForecast, WeatherForecastAdvanced>();
             services.AddControllers();
         }
 
