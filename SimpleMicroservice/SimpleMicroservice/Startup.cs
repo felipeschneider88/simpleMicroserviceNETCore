@@ -26,7 +26,7 @@ namespace SimpleMicroservice
         public void ConfigureServices(IServiceCollection services)
         {
             //Dependency Injection for simple wheater Forecast
-            services.AddTransient<IWeatherForecast, WeatherForecastAdvanced>();
+            services.AddTransient<IWeatherForecast, WeatherForecast>();
             services.AddControllers();
         }
 
